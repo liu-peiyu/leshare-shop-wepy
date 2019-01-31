@@ -59,7 +59,7 @@
     methods = {
       shopDetail(subShop) {
         this.$root.$navigate(`/pages/shop/sub_shop_detail?subShopId=${subShop.shopId}`);
-      },
+      }
     };
     events = {};
     onLoad() {

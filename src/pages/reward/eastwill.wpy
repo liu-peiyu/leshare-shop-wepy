@@ -191,7 +191,7 @@
 
 <script>
   import wepy from 'wepy';
-  import { initWxAppSync } from '../../api/wx_auth';
+  import { initWxAppSync, handleGetPhoneNumber } from '../../api/wx_auth';
   import { connect } from 'wepy-redux';
   import store from '../../store/utils';
   import base from '../../mixins/base';
@@ -199,7 +199,6 @@
   import Loading from '../../components/common/loading';
   import Tips from '../../utils/Tips';
   import Event from '../../utils/Event';
-  import { handleGetPhoneNumber } from '../../api/wx_auth';
 
   @connect({
     member: store.get('member')
@@ -280,9 +279,6 @@
         const url = 'https://mp.weixin.qq.com/s/7VwxnBhYPbbN1ESlVJ6uqg';
         this.toArticle('双旦福利·惊喜来袭', url);
       },
-
-
-
       toBonusDetail() {
         this.$navigate(`/package_member/pages/member/bonus_list`);
       },

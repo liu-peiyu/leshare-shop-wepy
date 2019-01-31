@@ -20,8 +20,6 @@
 
 <script>
   import wepy from 'wepy';
-  import router from '../../../mixins/router';
-  import DiscountBadge from '../../../components/goods/discount_badge';
   export default class GoodRowItem extends wepy.component {
     props = {
       goods: {}

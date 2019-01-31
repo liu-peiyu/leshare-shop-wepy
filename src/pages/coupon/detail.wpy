@@ -129,7 +129,7 @@
             this.$apply();
           }
         }, 3000);
-        wx.onUserCaptureScreen(function(res) {
+        wepy.onUserCaptureScreen(function(res) {
           Tips.modal('卡券二维码截屏无效，请本人出示二维码!')
         })
         console.info(`[coupon] check coupon status, start interval=${interval}`);

@@ -242,7 +242,7 @@
       const [subShopInfo, subShopDetail, goodsList] = await Promise.all([
         shop.subShopInfo(this.subShopId),
         shop.subShopDetail(this.subShopId),
-        shop.goodsList(this.subShopId),
+        shop.goodsList(this.subShopId)
         // shop.subShopGoodsList(this.subShopId),
       ]);
       this.subShopInfo = subShopInfo;

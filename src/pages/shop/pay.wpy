@@ -431,7 +431,6 @@
             await Tips.confirm(error.message, {}, '支付失败');
           }
         }
-
       },
       /**
        * 选择优惠券

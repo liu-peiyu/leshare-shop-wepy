@@ -17,7 +17,7 @@
     };
     data = {
       keyword: null,
-      loaction: null,
+      loaction: null
     };
     methods = {
       input(e) {

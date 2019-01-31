@@ -68,7 +68,7 @@
       },
       toBonusDetail() {
         this.$navigate(`/package_member/pages/member/bonus_list`);
-      },
+      }
     };
     computed = {
     };

@@ -146,7 +146,7 @@
 
 <script>
   import wepy from 'wepy';
-  import { initWxAppSync } from '../../api/wx_auth';
+  import { initWxAppSync, handleGetPhoneNumber } from '../../api/wx_auth';
   import { connect } from 'wepy-redux';
   import store from '../../store/utils';
   import base from '../../mixins/base';
@@ -154,7 +154,6 @@
   import Loading from '../../components/common/loading';
   import Tips from '../../utils/Tips';
   import Event from '../../utils/Event';
-  import { handleGetPhoneNumber } from '../../api/wx_auth';
 
   @connect({
     member: store.get('member')
